@@ -1,0 +1,56 @@
+$font-family-heading: 'Clash Grotesk', sans-serif
+$font-family-body: 'General Sans', sans-serif
+$font-family-britanica: 'Britanica-BlackSemiExpanded', sans-serif
+$max-width: 1200px
+$color-white: #fff
+$color-black: #000
+$color-green: #B7E514
+
+*
+  margin: 0%
+  padding: 0%
+  box-sizing: border-box
+
+body
+  background-color: #000
+  font-family: $font-family-body
+  font-weight: 400
+
+html
+  display: block
+  height: 100%
+  width: 100%
+  overflow-x: hidden
+
+body
+  display: block
+  min-height: 100%
+  width: 100%
+  overflow: hidden
+  position: relative
+
+/* scrollbar */
+::-webkit-scrollbar
+  width: 5px
+::-webkit-scrollbar-track
+  background: rgba(#000, 0.1)
+::-webkit-scrollbar-thumb
+  background: #FF8B71
+::-webkit-scrollbar-thumb:hover
+  background: #A81E41
+  
+@import './_general'
+@import './_typo-font-size'
+@import './_header'
+@import './_hero'
+@import './_features'
+@import './_section-the-pegen-coin'
+@import './_section-streaming'
+@import './_section-social-tokens'
+@import './_section-nft-marketplace'
+@import './_section-team'
+@import './_section-as-seen-on'
+@import './_section-roadmap'
+@import './_footer'
+
+
