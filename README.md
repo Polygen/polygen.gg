@@ -1,3 +1,3 @@
-# MahaDAO.com - Landing page
+# Polygen.gg - Landing page
 
-Home for the MahaDAO.com landing page
+Home for the Polygen.gg landing page
