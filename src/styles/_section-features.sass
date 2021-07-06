@@ -1,0 +1,66 @@
+#features-sec
+  color: $color-white
+  
+.features-gradient
+  background: url('../images/features-gradient-bg.svg') no-repeat center top
+  background-size: cover
+  min-height: 1014px
+  padding: 266px 0 296px 0
+
+  .card
+    border-radius: 22px 
+
+  .card-text
+    line-height: 26px
+    opacity: 0.64
+
+  .card-title
+    padding-bottom: 16px 
+    line-height: 56px  
+
+  .img-container     
+    padding: 48px 40px 40px 40px
+    border-bottom: 1px solid #2D2D2D
+
+  .current-bid
+    background: $color-black
+    border: 1px solid rgba(255, 255, 255, 0.2)
+    border-radius: 12px
+    padding: 10px 15px
+    display: inline-block
+    font-weight: 600
+    position: absolute
+    left: 160px
+    top: 64px
+    line-height: 18px
+    
+  .soon
+    position: absolute
+    right: 24px
+    top: 32px    
+    text-transform: uppercase     
+    span
+      opacity: 0.64  
+
+    .live-icon
+      background: #FF005E
+      height: 12px  
+      width: 12px
+      display: inline-block
+      border-radius: 12px
+      margin-right: 7px
+          
+@media only screen and ( min-width:768px) and (max-width:1270px ) 
+  .features-gradient .current-bid
+    left: 100px
+  .features-gradient .soon
+    top: 20px
+  .img-container .img-top
+    width: 120px
+  .features-gradient .card-title
+    line-height: 32px
+    min-height: 80px
+
+@media screen and (max-width: 667px) 
+  .features-gradient
+    padding-bottom: 0

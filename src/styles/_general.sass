@@ -7,18 +7,18 @@ li
   list-style: none
 a
   outline: none
-
-.no-txt-decoration
   text-decoration: none
+
+a:hover
+  outline: none
+  text-decoration: none  
   
 a.link-white
   color: $color-white
 
-a.link-underline
-  text-decoration: underline!important
+.opacity-text
+  opacity: 0.4
 
-a:hover.link-underline
-  text-decoration: none!important  
 .color-white
   color: $color-white
   
@@ -32,7 +32,8 @@ a:hover.link-underline
   font-weight: 600
 
 .gray-btn
-  background: linear-gradient(180deg, rgba(48, 48, 48, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), #000000
+  background: linear-gradient(180deg, rgba(48, 48, 48, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), #000000  
+  mix-blend-mode: normal
   border: 2px solid #575757
   border-radius: 40px 
   text-align: center
@@ -41,13 +42,25 @@ a:hover.link-underline
   
 .gray-btn:hover
   color: $color-green
-  
+  background: linear-gradient(180deg, rgba(61, 61, 61, 0.72) 0%, rgba(0, 0, 0, 0) 100%), #000000  
+
+.green-btn 
+  background: $color-green
+  color: $color-black 
+
+.green-btn:hover
+  background: $color-white
+  color: $color-green  
+
+.normal-text
+  line-height: 32px
+
 .main-heading
   font-weight: 700
   font-style: normal    
   color: $color-white
   margin: 0
-
+ 
 .card
   margin-left: 0
   margin-right: 0
@@ -110,4 +123,35 @@ a:hover.link-underline
 
 .content-part
   max-width: 600px
-	
+
+@media screen and (max-width: 667px) 
+  .content-part
+    padding-top: 50px
+
+  .normal-text
+    line-height: 24px    
+
+@media (max-width: 740px)
+    
+  .main-heading, .card-title    
+    line-height: 36px!important 
+
+  .card-text
+    line-height: inherit!important 
+    
+  .sub-heading
+    font-size: 20px!important  
+    
+  .sub-heading-text  
+    line-height: 24px!important  
+
+
+@media only screen and ( min-width:768px) and (max-width:1270px )
+  .normal-text
+    line-height: 24px  
+      
+  .img-part
+    padding: 0 15px
+
+  .content-part
+    max-width: 450px!important  

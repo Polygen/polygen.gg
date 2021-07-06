@@ -16,18 +16,20 @@
     border-radius: 8px    
 
   .card-body  
-    padding: 24px 40px 48px 0px
+    padding: 24px 0 48px 0
+
+  .card-title
+    line-height: 36px
 
   .card-text  
     letter-spacing: 0.02em
     opacity: 0.64
-    padding-top: 8px
     padding-bottom: 16px
-    line-height: 20px
+    line-height: 32px
 
   .social-link a
     color: $color-white
-    opacity: 0.9
+    opacity: 0.64
 
   .social-link a:hover
     opacity: 1
@@ -47,13 +49,36 @@
     background: url('../images/prev-icon.svg') no-repeat 
   
   .carousel-control-prev 
-    left: -150px
+    left: -151px
 
   .carousel-control-next-icon      
     background: url('../images/next-icon.svg') no-repeat 
     
   .carousel-control-next 
-    right: -130px    
-  
-    
+    right: -145px 
 
+  .carousel-control-next  span
+    background-position: right top 
+
+@media screen and (min-width: 1400px)
+  .container-fluid  
+    padding-left: 168px
+    padding-right: 168px
+    
+@media only screen and ( min-width:768px) and (max-width:1270px )
+  #team-sec .card-title
+    line-height: 22px
+
+@media only screen and ( max-width:1024px) 
+  #team-sec .carousel-control-prev-icon, #team-sec .carousel-control-next-icon
+    background-size: 50%
+
+  #team-sec .carousel-control-prev
+    left: 10px
+    top: 64px
+    width: auto
+
+  #team-sec .carousel-control-next    
+    right: 10px
+    top: 64px
+    width: auto

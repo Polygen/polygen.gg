@@ -1,9 +1,15 @@
 footer
   color: $color-white
-  margin-top: 208px
+  margin-top: 130px
   padding-top: 40px
-  border-top: 1px solid #1D1D1D
-  
+  padding-bottom: 183px
+  border-top: 1px solid $color-gray
+  border-bottom: 1px solid $color-gray
+
+
+  ul  
+    margin-bottom: 0
+
   .main-heading  
     padding-bottom: 80px  
     font-weight: 600
@@ -42,14 +48,19 @@ footer
 
   .typo-britanica-h1
     font-size: 32px
+    color: $color-white!important
+    padding-bottom: 18px !important
+    line-height: 38px!important
 
   .footer-title  
-     padding-bottom: 18px
+     padding-bottom: 8px
      color: $color-green
+     line-height: 24px
 
   .footer-text   
     max-width: 352px
     opacity: 0.4
+    line-height: 24px
 
   .footer-link a  
     color: $color-white
@@ -60,10 +71,42 @@ footer
 
   .footer-link li 
     line-height: 32px 
+    font-weight: 600
 
+  .social-items .fab
+    padding-right: 20px 
 
+.footer-btm
+  color: $color-white 
+  padding-top: 16px
+  padding-bottom: 24px
+
+.footer-btm a  
+  color: $color-white 
+  padding-left: 38px
+
+.footer-btm a:hover
+  color: $color-green 
+  opacity: 1.0
         
 
+@media screen and (max-width: 667px) 
+  footer
+    padding-bottom: 40px
+    margin-top: 40px
+    
+  .fot-block
+    padding-bottom: 20px
+  .footer-btm a
+    padding-left: 10px    
+
+@media only screen and ( min-width:768px) and (max-width:1270px )
+  footer
+    padding-bottom: 40px
+
+  footer .footer-title
+    line-height: 38px !important
+    
 
   
 

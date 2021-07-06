@@ -1,10 +1,23 @@
+@font-face
+  font-family: 'Britanica-Semi-Expanded-Black'
+  src: url("../fonts/BritanicaSemiExpanded/Britanica-Semi-Expanded-Extra-Bold.ttf")
+  
+@font-face
+  font-family: 'Britanica-Semi-Expanded-Extra-Bold'
+  src: url("../fonts/BritanicaSemiExpanded/Britanica-Semi-Expanded-Black.ttf")  
+  
 $font-family-heading: 'Clash Grotesk', sans-serif
 $font-family-body: 'General Sans', sans-serif
-$font-family-britanica: 'Britanica-BlackSemiExpanded', sans-serif
+$font-family-britanica-black: 'Britanica-Semi-Expanded-Black', sans-serif
+$font-family-britanica-extra-bold: 'Britanica-Semi-Expanded-Extra-Bold', sans-serif
+
+
+
 $max-width: 1200px
 $color-white: #fff
 $color-black: #000
 $color-green: #B7E514
+$color-gray: #1D1D1D
 
 *
   margin: 0%
@@ -12,9 +25,10 @@ $color-green: #B7E514
   box-sizing: border-box
 
 body
-  background-color: #000
+  background-color: $color-black
   font-family: $font-family-body
   font-weight: 400
+  font-size: 14px
 
 html
   display: block
@@ -35,15 +49,15 @@ body
 ::-webkit-scrollbar-track
   background: rgba(#000, 0.1)
 ::-webkit-scrollbar-thumb
-  background: #FF8B71
+  background: #b7e514
 ::-webkit-scrollbar-thumb:hover
-  background: #A81E41
+  background: #78d10e
   
 @import './_general'
 @import './_typo-font-size'
 @import './_header'
 @import './_hero'
-@import './_features'
+@import './_section-features'
 @import './_section-the-pegen-coin'
 @import './_section-streaming'
 @import './_section-social-tokens'
@@ -51,6 +65,7 @@ body
 @import './_section-team'
 @import './_section-as-seen-on'
 @import './_section-roadmap'
+@import './_section-the-future'
 @import './_footer'
 
 
