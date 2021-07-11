@@ -19,8 +19,9 @@
       label
         position: absolute
         right: 84px
-        top: 22px  
-        margin: 0 
+        top: 50%  
+        margin: 0
+        transform: translate(0%, -50%)
 
     .submit-btn 
       background: url('../images/next-icon.svg') no-repeat 0px  0px
@@ -43,20 +44,7 @@
       color: $color-white
 
     .theme-input:focus
-      box-shadow: none      
-
-  ::placeholder 
-    color: $color-white
-    opacity: 1
-
-  :-ms-input-placeholder 
-    color: $color-white
-
-  ::-ms-input-placeholder 
-    color: $color-white
-
-
-          
+      box-shadow: none                
 @media only screen and ( min-width:768px) and (max-width:1270px ) 
   .features-gradient .current-bid
     left: 100px
@@ -71,3 +59,8 @@
 @media screen and (max-width: 667px) 
   .features-gradient
     padding-bottom: 0
+
+  .main-heading font  
+    width: 100%
+    display: block
+    font-size: 30px

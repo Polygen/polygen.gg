@@ -6,9 +6,10 @@
 					<p class="timer typo-britanica-h6">
 						<span class="text-uppercase">Going live in</span> 
 						<span class="typo-spacial-h5">
-							<label><font class="color-green">06</font> Hours</label>  
-							<label><font class="color-green">33</font> Minutes</label> 
-							<label><font class="color-green">09</font> Seconds</label>
+							<label><font class="color-green count" data-number="06"></font> Hours</label>  
+							<label><font class="color-green count" data-number="33"></font> Minutes</label> 
+							<label><font class="color-green count" data-number="09"></font> Seconds</label>
+							<!--<span class="counter-count">$ <font class="count" data-number="108455"></font></span>-->
 						</span>
 					</p>
 					<h1 class="main-heading typo-clash-grotesk-h1 text-uppercase">
@@ -35,3 +36,24 @@
 		</div>
 	</div>
 </section>
+
+<script> 
+
+$('.count').each(function() {
+  var speed = 1500;
+
+  function change() {
+    speed = 2000;
+  }
+  setTimeout(change, 2000);
+  $(this).prop('Counter', 0).animate({
+    Counter: $(this).data('number')
+  }, {
+    duration: speed,
+    easing: 'swing',
+    step: function(now) {
+      $(this).text(Math.ceil(now).toLocaleString('en'));
+    }
+  });
+});
+</script>
