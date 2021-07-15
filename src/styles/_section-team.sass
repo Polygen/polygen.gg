@@ -36,10 +36,23 @@
 
   .social-link a:nth-child(2)    
     margin: 0px 8px 
-    
+
+  .carousel-indicators  
+    cursor: pointer
+    bottom: -10px
+
+  .carousel-indicators .active  
+    background: $color-green  
+
+  .carousel-indicators li
+    border: none
+    display: inline-block
+
+
   .carousel-control-next, .carousel-control-prev
     bottom: auto
     top: 110px
+    width: auto
 
   .carousel-control-next-icon, .carousel-control-prev-icon
     height: 72px
@@ -49,16 +62,24 @@
     background: url('../images/prev-icon.svg') no-repeat 
   
   .carousel-control-prev 
-    left: -151px
+    left: -99px
 
   .carousel-control-next-icon      
     background: url('../images/next-icon.svg') no-repeat 
     
   .carousel-control-next 
-    right: -145px 
+    right: -96px 
 
   .carousel-control-next  span
     background-position: right top 
+
+  .carousel-inner
+    margin: 0
+    text-align: center
+
+@media only screen and ( min-width:768px) and (max-width:930px )
+  #team-sec .card-title
+    min-height: 45px
 
 @media screen and (min-width: 1400px)
   #team-sec .container-fluid  
@@ -71,14 +92,74 @@
 
 @media only screen and ( max-width:1024px) 
   #team-sec .carousel-control-prev-icon, #team-sec .carousel-control-next-icon
-    background-size: 50%
+    background-size: 70%
+
+  #team-sec .carousel-control-prev, #team-sec .carousel-control-next 
+    top: 60px
+    width: auto   
 
   #team-sec .carousel-control-prev
-    left: 10px
-    top: 64px
-    width: auto
+    left: 0
 
   #team-sec .carousel-control-next    
-    right: 10px
-    top: 64px
-    width: auto
+    right: 0
+
+@media screen and (max-width: 667px) 
+  #team-sec .carousel-control-prev, #team-sec .carousel-control-next
+    top: 83px
+   
+  .carousel-inner.row
+    margin: 0
+    
+  #team-sec .card-body
+    text-align: center
+
+  #team-sec .img-fluid
+    width: 200px
+
+@media only screen and ( min-width:1024px) and (max-width:1300px )  
+  #team-sec .carousel-control-next, #team-sec .carousel-control-prev
+    top: 87px
+
+@media screen and (min-width: 768px)  
+  .carousel-inner .active, .carousel-inner .active + .carousel-item, .carousel-inner .active + .carousel-item + .carousel-item,  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  
+    display: block
+    
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item 
+    transition: none
+      
+  .carousel-inner .carousel-item-next,  .carousel-inner .carousel-item-prev 
+    position: relative
+    transform: translate3d(0, 0, 0)
+    
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item 
+    position: absolute
+    top: 0
+    right: -25%
+    z-index: -1
+    display: block
+    visibility: visible   
+
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left, .carousel-item-next.carousel-item-left + .carousel-item, .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item, .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item, .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item 
+    position: relative
+    transform: translate3d(-100%, 0, 0)
+    visibility: visible
+    
+  .carousel-inner .carousel-item-prev.carousel-item-right 
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    display: block
+    visibility: visible
+       
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right, .carousel-item-prev.carousel-item-right + .carousel-item, .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item, .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item, .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item 
+    position: relative
+    transform: translate3d(100%, 0, 0)
+    visibility: visible
+    display: block
+    visibility: visible    
+
+@media screen and (max-width: 667px) 
+  #team-sec
+    padding-top: 100px

@@ -14,7 +14,7 @@
     line-height: 80px
     padding-bottom: 8px
 
-  .wording_row span
+  .wording_item_prev, .wording
     opacity: 0.2
 
   .wording_item_prev
@@ -87,9 +87,10 @@
       width: 300px
       transform: translateX(130%)
 
-  @media only screen and ( min-width:1024px) and (max-width:1270px )
+
+  @media only screen and ( min-width:1024px) and (max-width:1300px )
     .wording-chart .wording_link:hover:before
-      transform: translateX(175%) 
+      transform: translateX(160%) 
 
   @media only screen and ( min-width:1300px) and (max-width:1400px )
     .wording-chart .wording_link:hover:before
@@ -104,4 +105,7 @@
       background-size: 100% !important
       width: 320px
       height: 320px
-      top: 60px
+      top: -176px
+@media screen and (max-width: 667px)  
+  #wording-sec
+    margin: 100px 0px 0px 0px    

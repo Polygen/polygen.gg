@@ -1,4 +1,4 @@
-<section id="the-pegen-coin-sec" class="the-pegen-coin-gradient" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+<section id="the-pegen-coin-sec" class="the-pegen-line-bg the-pegen-coin-gradient" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
 	<div class="container-fluid">
 		<div class="content-center space-between">
 			<div class="content-part" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
@@ -17,10 +17,21 @@
 				</div>
 				<a class="btn gray-btn btn-md typo-general-sans-h5 d-lg-inline-block d-block" target="_blank" href="#">Read Whitepaper</a>
 			</div>
-
 			<div class="img-part" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-				<img class="img-fluid" src="../images/pegen-coin.svg"  alt="" />
+				<video id="video" class="img-fluid"  src="../images/token.mp4"></video>
 			</div>
 		</div>
 	</div>
 </section>
+<script>
+	function scrollVideo() {
+	 var video = $('#video').get(0),
+	   videoLength = video.duration,
+	   scrollPosition = $(document).scrollTop();
+	 
+	 video.currentTime = (scrollPosition / ($(document).height() - $(window).height())) * videoLength;
+	}
+	$(window).scroll(function(e) {
+	 scrollVideo();
+	});
+</script>

@@ -1,4 +1,4 @@
-<section id="hero-sec" class="hero-game-img">
+<section id="hero-sec" class="hero-game-img" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
 	<div class="container-fluid">
 		<div class="row no-gutters">
 			<div class="col-lg-6 col-md-6">
@@ -6,13 +6,13 @@
 					<p class="timer typo-britanica-h6">
 						<span class="text-uppercase">Going live in</span> 
 						<span class="typo-spacial-h5">
-							<label><font class="color-green count" data-number="06"></font> Hours</label>  
-							<label><font class="color-green count" data-number="33"></font> Minutes</label> 
-							<label><font class="color-green count" data-number="09"></font> Seconds</label>
-							<!--<span class="counter-count">$ <font class="count" data-number="108455"></font></span>-->
+							<label class="d-none"><font class="color-green" id="timerDays"></font> Days</label> 
+							<label><font class="color-green" id="timerHours"></font> Hours</label>  
+							<label><font class="color-green" id="timerMinutes"></font> Minutes</label> 
+							<label><font class="color-green" id="timerSeconds"></font> Seconds</label>							
 						</span>
 					</p>
-					<h1 class="main-heading typo-clash-grotesk-h1 text-uppercase">
+					<h1 class="main-heading typo-britanica-h1">
 						Watch it.<br>
 						Live it.<br>
 						Own it.
@@ -23,8 +23,8 @@
 						in real time. 
 					</p>
 					<div class="hero-link typo-general-sans-h5">
-						<a  class="btn gray-btn btn-md  color-green d-lg-inline-block d-block" target="_blank" href="#">Join us on Discord</a>
-						<a  class="btn btn-br-1 gray-btn btn-md  d-lg-inline-block d-block follow-link" target="_blank" href="#">Follow us on Twitter</a>
+						<a  class="btn gray-btn btn-md   d-lg-inline-block d-block" target="_blank" href="#">Join us on Discord</a>
+						<a  class="btn gray-btn btn-md  d-lg-inline-block d-block follow-link" target="_blank" href="#">Follow us on Twitter</a>
 					</div>
 				</div>
 			</div>
@@ -32,28 +32,49 @@
 				<div class="game-img  d-none d-lg-block d-md-block">
 					<img class="img-fluid" src="../images/hero-game-img.svg" alt="" />
 				</div>
-			</div>				
+			</div>
 		</div>
 	</div>
 </section>
-
-<script> 
-
-$('.count').each(function() {
-  var speed = 1500;
-
-  function change() {
-    speed = 2000;
-  }
-  setTimeout(change, 2000);
-  $(this).prop('Counter', 0).animate({
-    Counter: $(this).data('number')
-  }, {
-    duration: speed,
-    easing: 'swing',
-    step: function(now) {
-      $(this).text(Math.ceil(now).toLocaleString('en'));
-    }
-  });
-});
+<script type="text/javascript">
+	var timer;
+	function settimer(){
+		currentTime = new Date();
+		clearInterval(timer);
+		var timer_month=12;
+		var timer_day=15;
+		var timer_year=currentTime.getFullYear();
+		var timer_hour=00;
+		if(timer_hour=="")timer_hour=0;
+		var timer_min=00;
+		if(timer_min=="")timer_min=0;
+		
+		var timer_date=timer_month+"/"+timer_day+"/"+timer_year+" "+timer_hour+":"+timer_min;
+		var end = new Date(timer_date); // Arrange values in Date Time Format
+		var now = new Date(); // Get Current date time
+		var second = 1000; // Total Millisecond In One Sec
+		var minute = second * 60; // Total Sec In One Min
+		var hour = minute * 60; // Total Min In One Hour
+		var day = hour * 24; // Total Hour In One Day
+		
+		function showtimer() {
+			var now = new Date();
+			var remain = end - now; // Get The Difference Between Current and entered date time
+			if(remain < 0){
+			clearInterval(timer);
+			//document.getElementById("timer_value").innerHTML = 'Reached!';
+			return;
+			}
+			var days = Math.floor(remain / day); // Get Remaining Days
+			var hours = Math.floor((remain % day) / hour); // Get Remaining Hours
+			var minutes = Math.floor((remain % hour) / minute); // Get Remaining Min
+			var seconds = Math.floor((remain % minute) / second); // Get Remaining Sec
+			document.getElementById("timerDays").innerHTML = days;
+			document.getElementById("timerHours").innerHTML = hours;
+			document.getElementById("timerMinutes").innerHTML = minutes;
+			document.getElementById("timerSeconds").innerHTML = seconds;
+		}
+		timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
+	}
+	settimer();
 </script>
