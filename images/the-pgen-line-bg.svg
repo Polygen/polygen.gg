@@ -1,0 +1,45 @@
+<svg width="1536" height="360" viewBox="0 0 1536 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="13" width="1536" height="348">
+<rect y="13.0146" width="1536" height="346.986" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<path d="M-614.881 358.812H2151.51" stroke="white" stroke-miterlimit="10"/>
+<path d="M-555.75 222.348H2092.94" stroke="white" stroke-miterlimit="10"/>
+<path d="M-580.311 279.366H2117.03" stroke="white" stroke-miterlimit="10"/>
+<path d="M-392.109 179.411H2151.51" stroke="white" stroke-miterlimit="10"/>
+<path d="M-393.689 145.927H1984.29" stroke="white" stroke-miterlimit="10"/>
+<path d="M-278.51 119.057H1853.72" stroke="white" stroke-miterlimit="10"/>
+<path d="M-184.109 97.0405H1745.08" stroke="white" stroke-miterlimit="10"/>
+<path d="M-105.34 78.6719H1654.42" stroke="white" stroke-miterlimit="10"/>
+<path d="M-87.5078 63.1455H1581.72" stroke="white" stroke-miterlimit="10"/>
+<path d="M-87.5078 49.2949H1512.49" stroke="white" stroke-miterlimit="10"/>
+<path d="M-87.5078 38.1548H1512.49" stroke="white" stroke-miterlimit="10"/>
+<path d="M845.98 37.9551L1055.18 477.076" stroke="white" stroke-miterlimit="10"/>
+<path d="M923.93 38.2783L1342.01 477.074" stroke="white" stroke-miterlimit="10"/>
+<path d="M1001.32 37.9551L1628.88 477.076" stroke="white" stroke-miterlimit="10"/>
+<path d="M1078.96 37.9551L1915.75 477.087" stroke="white" stroke-miterlimit="10"/>
+<path d="M1156.63 37.9551L2202.79 477.087" stroke="white" stroke-miterlimit="10"/>
+<path d="M2151.51 358.814L1234.28 37.9551" stroke="white" stroke-miterlimit="10"/>
+<path d="M1311.94 37.9551L2117.03 279.37" stroke="white" stroke-miterlimit="10"/>
+<path d="M1389.59 37.9551L2092.94 222.486" stroke="white" stroke-miterlimit="10"/>
+<path d="M1455.09 38.2783L2151.51 179.409" stroke="white" stroke-miterlimit="10"/>
+<path d="M690.537 38.1548L481.438 477.07" stroke="white" stroke-miterlimit="10"/>
+<path d="M194.578 477.07L612.778 38.1548" stroke="white" stroke-miterlimit="10"/>
+<path d="M535.02 38.1548L-92.25 477.07" stroke="white" stroke-miterlimit="10"/>
+<path d="M-379.119 477.07L457.251 38.1548" stroke="white" stroke-miterlimit="10"/>
+<path d="M379.46 38.1548L-666 477.07" stroke="white" stroke-miterlimit="10"/>
+<path d="M-614.881 358.807L301.739 38.1548" stroke="white" stroke-miterlimit="10"/>
+<path d="M223.959 38.1548L-580.311 279.342" stroke="white" stroke-miterlimit="10"/>
+<path d="M146.19 38.1548L-555.75 222.345" stroke="white" stroke-miterlimit="10"/>
+<path d="M68.3705 38.1548L-393.689 145.921" stroke="white" stroke-miterlimit="10"/>
+<path d="M768.301 38.1548V477.081" stroke="white" stroke-miterlimit="10"/>
+</g>
+<rect width="1536" height="359.998" fill="url(#paint0_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="768" y1="0" x2="768" y2="387.106" gradientUnits="userSpaceOnUse">
+<stop offset="0.223958"/>
+<stop offset="0.536458" stop-opacity="0.623081"/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
