@@ -1,3 +1,3 @@
-# Polygen.gg - Landing page
+# Polygem.gg - Landing page
 
-Home for the Polygen.gg landing page
+Home for the Polygem.gg landing page
